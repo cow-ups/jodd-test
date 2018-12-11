@@ -31,7 +31,7 @@ public class ReportAction {
     @In @Request
     HttpServletResponse response;
 
-    @Action(value = "exp")
+    @Action(value = "export")
     public void test() throws IOException {
         OutputStream output = null;
         String excelName = reportService.getWorkBookName(workbookIndex);
@@ -52,4 +52,5 @@ public class ReportAction {
             }
         }
     }
+
 }
